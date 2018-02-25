@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="rub" class="currency.MyCurrency">
+        <property name="courseRelativeToGold" value="2453.94"/>
+        <property name="currencySymbol" value="\u20BD"/>
+    </bean>
+    <bean id="eur" class="currency.MyCurrency">
+        <property name="courseRelativeToGold" value="35.05"/>
+        <property name="currencySymbol" value="€"/>
+    </bean>
+    <bean id="gbp" class="currency.MyCurrency">
+        <property name="courseRelativeToGold" value="31.00"/>
+        <property name="currencySymbol" value="£"/>
+    </bean>
+    <bean id="usd" class="currency.MyCurrency">
+        <property name="courseRelativeToGold" value="43.48"/>
+        <property name="currencySymbol" value="$"/>
+    </bean>
+
+</beans>
